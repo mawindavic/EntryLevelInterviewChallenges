@@ -21,6 +21,7 @@ class TestAdditiveSequence(unittest.TestCase):
         self.assertEqual(actual, expected, message)
 
     def test_digit_string(self):
+        """Test a string that is a string"""
         arg1 = "1235"
         actual = has_additive_sequence(arg1)
         expected = True
@@ -32,6 +33,7 @@ class TestAdditiveSequence(unittest.TestCase):
         expected = False
         message = "Expected {}, but returned {}".format(expected, actual)
         self.assertEqual(actual, expected, message)
+
 
 if __name__ == "__main__":
     unittest.main(exit=False)

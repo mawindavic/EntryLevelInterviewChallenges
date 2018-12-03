@@ -1,6 +1,6 @@
 def has_additive_sequence(string: str) -> bool:
-    """Checks whether a given string has additive sequence returns true if it contains
-    additive sequence and false otherwise
+    """Returns true when a given string has additive sequence and
+    false otherwise
     @type string: str
     @rtype:bool
     >>> has_additive_sequence("1,2,3,5")
