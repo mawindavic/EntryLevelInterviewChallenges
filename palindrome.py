@@ -6,7 +6,12 @@ def is_palindrome(text: str, input_store: List) -> bool:
     record od last five entries
     false otherwise
     @type text:str
-    @rtype: None
+    @rtype: bool
+    >>>store=[]
+    >>> is_palindrom("ijeji",store)
+    >>> True
+    >>> is_palindrome("test",store")
+    >>> False
     """
     input_store.append(text)
     if len(input_store) > 5:
