@@ -13,6 +13,7 @@ def is_palindrome(text: str, input_store: List) -> bool:
     >>> is_palindrome("test",store")
     >>> False
     """
+
     input_store.append(text)
     if len(input_store) > 5:
         input_store.remove(input_store[0])

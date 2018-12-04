@@ -12,12 +12,16 @@ def has_additive_sequence(string: str) -> bool:
     >>> has_additive_sequence("12345")
     >>> False
     """
+
     digit_list = []
     if string.isdigit():
         for digit in string:
             digit_list.append(digit)
     else:
         digit_list = string.split(',')
+        for value in digit_list:
+            if not value.isdigit():
+                return False
     count = 0
     while count < len(digit_list) - 3:
         if sum([int(digit) for digit in digit_list[count:count+2]]) != int(digit_list[count + 2]):
